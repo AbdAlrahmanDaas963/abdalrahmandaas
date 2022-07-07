@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* background-image: linear-gradient(155deg , #0a5aa5 5%, #000000 30% ,black 60%); */
+  /* background-image: linear-gradient(155deg , #155794 10% , #000000 90% ,#ff8717 10%); */
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.493);
+  font-family: Berlin Sans FB;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #d4d4d4;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+.App svg {
+  position: absolute;
+}
+.full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.svg2 {
+  width: 200px;
+  height: 200px;
+}
+.noise2 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      135deg,
+      #2d4cd877 30%,
+      rgba(10, 12, 100, 0.459) 60%,
+      #01073880 90%,
+      #c7532594 90%
+    ),
+    url(noise.svg);
+  filter: contrast(250%) brightness(90%);
+}
+.overlay2 {
+  /* ... */
+  background: rgb(0, 0, 0);
+  mix-blend-mode: multiply;
+}
+.isolate2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  isolation: isolate;
+  z-index: 0;
+  /* ... */
+}
+
+.header,
+.works,
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header,
+.footer {
+  font-size: 20px;
+  height: 25vh;
+  margin-top: 5vh;
+}
+.header {
+  transform: translateY(-50%);
+}
+.works {
+  min-height: 50vh;
+  z-index: 1;
+}
+.me {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  background-color: white;
+}
+.skilles {
+  color: #cccccc;
+}
+.work-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px #0a5aa5;
+}
+.tool {
+  color: #9b9b9b;
+  font-style: italic;
+}
+.list {
+  width: fit-content;
+  padding: 1px;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  align-content: center;
+  justify-items: center;
+
+  background-color: rgba(0, 255, 255, 0);
+}
+.item {
+  margin: 20px;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100);
+}
+.link img {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+}
+
+.side {
+  width: 28px;
+  height: 28px;
+  background-color: #0a5aa500;
+  /* z-index: -1; */
+  position: absolute;
+  border-radius: 3px;
+}
+.tit {
+  color: #fa973a;
+
+  font-size: 20px;
+  z-index: 1;
+}
+.footer:first-child {
+  color: red;
+}
+.water {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  transform: rotate(-25deg);
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    grid-template-columns: 100%;
+  }
+}
+@media screen and (max-width: 769px) and (min-width: 992px) {
+  .list {
+    /* width: 200px; */
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (min-width: 993px) {
+  .list {
+    /* width: 200px; */
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+}
+
+.null {
+  transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #000000;
+}
