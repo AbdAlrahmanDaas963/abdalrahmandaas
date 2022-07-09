@@ -3,7 +3,7 @@ import { motion } from "framer-motion/dist/es/index";
 import Link from "./common/Link";
 
 import email from "./img/icons/gmail.png";
-import face from "./img/icons/facebook.png";
+import face from "./img/icons/face.png";
 import github from "./img/icons/github.png";
 import insta from "./img/icons/instagram.png";
 import tele from "./img/icons/telegram.png";

@@ -107,6 +107,7 @@ code {
   font-size: 20px;
   height: 25vh;
   margin-top: 5vh;
+  width: 300px;
 }
 .header {
   transform: translateY(-50%);
@@ -158,20 +159,19 @@ code {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 200px;
+  width: 300px;
 }
 .link {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: grayscale(100);
 }
 .link img {
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   border-radius: 3px;
 }
 
