@@ -55,13 +55,6 @@ function Works() {
       tool: "{React-js, firebase}",
       href: "https://abdalrahmandaas963.github.io/ChatApp/",
     },
-    {
-      id: 7,
-      img: posts,
-      title: "Posts",
-      tool: "{React-js, Redux-Toolkit}",
-      href: "https://abdalrahmandaas963.github.io/redux-1/",
-    },
   ];
   return (
     <motion.div
@@ -87,3 +80,12 @@ function Works() {
 }
 
 export default Works;
+
+// ,
+// {
+//   id: 7,
+//   img: posts,
+//   title: "Posts",
+//   tool: "{React-js, Redux-Toolkit}",
+//   href: "https://abdalrahmandaas963.github.io/redux-1/",
+// },
